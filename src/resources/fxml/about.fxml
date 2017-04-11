@@ -10,6 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="6.0" layoutY="12.0" prefHeight="76.0" prefWidth="187.0" text="%about.label.text" />
+      <Label layoutX="6.0" layoutY="12.0" prefHeight="34.0" prefWidth="187.0" text="%about.label.text" />
+      <Label fx:id="messageLabel" alignment="TOP_LEFT" layoutX="6.0" layoutY="58.0" prefHeight="34.0" prefWidth="187.0" />
    </children>
 </AnchorPane>

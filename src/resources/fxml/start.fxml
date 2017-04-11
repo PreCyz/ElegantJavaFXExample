@@ -10,6 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="144.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="aboutButton" layoutX="70.0" layoutY="36.0" mnemonicParsing="false" text="%button.about" />
+      <Button fx:id="aboutButton" layoutX="54.0" layoutY="36.0" mnemonicParsing="false" text="%button.about" />
+      <TextField fx:id="messageTextField" layoutX="26.0" layoutY="72.0" />
    </children>
 </AnchorPane>

@@ -1,5 +1,6 @@
 package handler.impl;
 
+import dto.Gatherer;
 import handler.ViewHandler;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -16,10 +17,12 @@ public class AppViewHandler implements ViewHandler {
 
 	private final Stage primaryStage;
 	private final ResourceBundle bundle;
+	private Gatherer gatherer;
 
 	public AppViewHandler(Stage primaryStage, ResourceBundle bundle) {
 		this.primaryStage = primaryStage;
 		this.bundle = bundle;
+		gatherer = new Gatherer();
 	}
 
 	@Override
@@ -32,6 +35,16 @@ public class AppViewHandler implements ViewHandler {
 		Stage aboutStage = new Stage();
 		aboutStage.initModality(Modality.WINDOW_MODAL);
 		buildAndShowScene(aboutStage, WindowFactory.ABOUT.createWindow(this, bundle));
+	}
+
+	@Override
+	public void updateGatherer(Gatherer gatherer) {
+		this.gatherer = gatherer;
+	}
+
+	@Override
+	public Gatherer gatherer() {
+		return gatherer;
 	}
 
 	private void buildAndShowScene(Stage stage, AbstractWindow window) throws IOException {
